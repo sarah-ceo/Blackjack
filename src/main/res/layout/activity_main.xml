@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutAll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutButtons"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/anothercard"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="5px"
+            android:layout_weight="1.5"
+            android:background="@color/darkgreen"
+            android:gravity="center"
+            android:onClick="AnotherCardFunction"
+            android:text="@string/anothercard"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/nomorecards"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="5px"
+            android:layout_weight="0.75"
+            android:background="@color/darkgreen"
+            android:gravity="center"
+            android:onClick="NoMoreCardsFunction"
+            android:text="@string/nomorecards"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/reset"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="5px"
+            android:layout_weight="0.5"
+            android:background="@color/darkgreen"
+            android:gravity="center"
+            android:onClick="ResetFunction"
+            android:text="@string/reset"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/config"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="5px"
+            android:layout_weight=".5"
+            android:background="@color/darkgreen"
+            android:gravity="center"
+            android:onClick="myConfigFunction"
+            android:text="@string/config"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewBankName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"
+        android:background="@color/darkgreen"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="70px"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutHandBankCard"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutBankResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewBR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="70px" />
+
+            <LinearLayout
+                android:id="@+id/BankResultCards"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewPlayerName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"
+        android:background="@color/darkgreen"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="70px"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutHandPlayerCard"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutPlayerResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="70px" />
+
+                <TextView
+                    android:id="@+id/textViewMise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="70px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/PlayerResultsCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"></LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

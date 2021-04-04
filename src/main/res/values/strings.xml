@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BlackJack Sarah CE-OUGNA</string>
+    <string name="anothercard">Another card</string>
+    <string name="nomorecards">No more cards</string>
+    <string name="reset">Reset</string>
+    <string name="config">...</string>
+    <string name="colvert">Green</string>
+    <string name="colred">Red</string>
+    <string name="edittext">4</string>
+    <string name="valider">Confirm</string>
+    <string name="annuler">Cancel</string>
+</resources>
